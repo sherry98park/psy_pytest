@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>야 너두 파이썬 할 수 있어!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>야 너두 파이썬 할 수 있어!</h1>
+
+        <!-- 파이썬 문제 제시 블록 -->
+        <div id="question-block" class="block">
+            <h2>문제:</h2>
+            <pre id="python-question">로딩 중...</pre>
+        </div>
+
+        <!-- 정답 입력 칸 -->
+        <div id="answer-block" class="block">
+            <h2>당신의 예측:</h2>
+            <input type="text" id="user-answer" placeholder="출력을 예측해보세요">
+            <button onclick="submitAnswer()">제출</button>
+        </div>
+
+        <!-- 정답 여부 블록 -->
+        <div id="result-block" class="block">
+            <h2>결과:</h2>
+            <p id="result-text">아직 제출되지 않았습니다.</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

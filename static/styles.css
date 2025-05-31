@@ -1,0 +1,88 @@
+/* 우주 배경 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    background-image: url('https://cdn.pixabay.com/photo/2013/07/18/20/26/space-164123_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* 전체 컨테이너 */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* 배경에 블랙 반투명 박스 */
+    border-radius: 20px;
+    margin-top: 3rem;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+/* 제목 */
+h1 {
+    font-size: 2.8rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    margin-bottom: 2rem;
+}
+
+/* 각 블록 공통 스타일 */
+.block {
+    background-color: rgba(25, 25, 25, 0.85);
+    border: 2px solid #00ffff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+/* 파이썬 문제 */
+#python-question {
+    background-color: #111;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    white-space: pre-wrap;
+    color: #c0f7ff;
+    text-align: left;
+}
+
+/* 입력창 */
+#user-answer {
+    width: 60%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #00ffff;
+}
+
+/* 버튼 */
+button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #00ffff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #66ffff;
+}
+
+/* 결과 텍스트 */
+#result-text {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
